@@ -1,0 +1,160 @@
+
+/* start pricing section*/
+.pricing {
+    position: relative;
+}
+
+.pricing .overflow-hidden-wrapper {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.pricing .top-right {
+    position: absolute;
+    top: 5%;
+    right: -5%;
+    width: 20vw;
+    min-width: 15vw;
+    aspect-ratio: 1 / 1;
+    opacity: 0.4;
+    animation: rotate-clockwise 60s linear infinite;
+    -webkit-animation: rotate-clockwise 60s linear infinite;
+}
+
+.pricing .bottom-left {
+    position: absolute;
+    bottom: 15%;
+    left: -5%;
+    width: 25vw;
+    min-width: 25vw;
+    opacity: 0.2;
+    aspect-ratio: 1 / 1;
+    animation: rotate-clockwise 80s linear infinite;
+    -webkit-animation: rotate-clockwise 80s linear infinite;
+}
+
+@media (max-width:767px) {
+    .pricing .top-right {
+
+        width: 35vw;
+    }
+
+    .pricing .bottom-left {
+
+        width: 50vw;
+        left: -15%;
+        opacity: 0.5;
+    }
+}
+
+.pricing .plan-card {
+    min-height: 150px;
+}
+
+.pricing .info {
+    position: relative;
+    background-color: #F3F2EC;
+    border-radius: 0 10px 10px 0;
+    -webkit-border-radius: 0 10px 10px 0;
+    -moz-border-radius: 0 10px 10px 0;
+    -ms-border-radius: 0 10px 10px 0;
+    -o-border-radius: 0 10px 10px 0;
+}
+
+.pricing .info .plan-head {
+    position: absolute;
+    top: 20px;
+    right: -20px;
+    padding: 10px 70px 10px 40px;
+    background-color: var(--main-color);
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 0 0 0 30px;
+    -webkit-border-radius: 0 0 0 30px;
+    -moz-border-radius: 0 0 0 30px;
+    -ms-border-radius: 0 0 0 30px;
+    -o-border-radius: 0 0 0 30px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.6);
+}
+
+.pricing .info .plan-head::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 20px solid var(--dark-color);
+    border-right: 20px solid transparent;
+}
+
+.pricing .header-plan {
+    display: flex;
+    align-items: center;
+}
+
+.pricing .header-plan .text-lg {
+    margin: 0;
+    position: relative;
+}
+
+.pricing .header-plan .line {
+    flex-grow: 1;
+    height: 1px;
+    margin-right: 20px;
+}
+
+.pricing .price {
+    border-radius: 10px 0px 0px 10px;
+    -webkit-border-radius: 10px 0px 0px 10px;
+    -moz-border-radius: 10px 0px 0px 10px;
+    -ms-border-radius: 10px 0px 0px 10px;
+    -o-border-radius: 10px 0px 0px 10px;
+    overflow: hidden;
+    background-image: url(./../../../../public/assets/images/price.png);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.pricing .price::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #F3F2EC;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+.price-inner {
+    position: relative;
+    z-index: 2;
+}
+
+@media (max-width:767px) {
+    .pricing .info {
+        border-radius: 10px 10px 0 0;
+        -webkit-border-radius: 10px 10px 0 0;
+        -moz-border-radius: 10px 10px 0 0;
+        -ms-border-radius: 10px 10px 0 0;
+        -o-border-radius: 10px 10px 0 0;
+    }
+
+    .pricing .price {
+        border-radius: 0 0 10px 10px;
+        -webkit-border-radius: 0 0 10px 10px;
+        -moz-border-radius: 0 0 10px 10px;
+        -ms-border-radius: 0 0 10px 10px;
+        -o-border-radius: 0 0 10px 10px;
+    }
+}
+
+/* end pricing section*/

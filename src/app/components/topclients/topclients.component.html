@@ -1,0 +1,66 @@
+
+<!-- start top clients -->
+<section class="top-clients py-12">
+    <div class="overflow-hidden-wrapper">
+        <div class="top-right" data-aos="fade-up">    
+            <img ngSrc="assets/images/shapesolid.svg" alt="jara shape" fill>
+        </div>
+        <div class="bottom-left" data-aos="fade-up">
+            <img ngSrc="assets/images/shapesolid.svg" alt="jara shape" fill>
+        </div>
+    </div>
+    
+
+    <div class="sec-header" data-aos="fade-up">
+        <h2>عملائنا المميزين</h2>
+    </div>
+
+    <div class="container">
+        <div class="my-8 relative z-10" data-aos="flip-up">
+            <div class="btns flex items-center justify-between">
+                <button (click)="prevCard()"><i class="fa-solid fa-caret-right"></i></button>
+                <button (click)="nextCard()"><i class="fa-solid fa-caret-left"></i></button>
+            </div>
+            <owl-carousel-o [options]="TopClients" #owlTopClients>
+                <!-- item -->
+                <ng-template carouselSlide>
+                    <div class="client-logo relative w-full h-full object-cover">
+                        <img ngSrc="assets/images/logo.png" fill alt="">
+                    </div>
+                </ng-template>
+                <!-- item -->
+                <ng-template carouselSlide>
+                    <div class="client-logo relative w-full h-full object-cover">
+                        <img ngSrc="assets/images/logo3.png" fill alt="">
+                    </div>
+                </ng-template>
+                <!-- item -->
+                <ng-template carouselSlide>
+                    <div class="client-logo relative w-full h-full object-cover">
+                        <img ngSrc="assets/images/logo4.png" fill alt="">
+                    </div>
+                </ng-template>
+                <!-- item -->
+                <ng-template carouselSlide>
+                    <div class="client-logo relative w-full h-full object-cover">
+                        <img ngSrc="assets/images/logo.png" fill alt="">
+                    </div>
+                </ng-template>
+                <!-- item -->
+                <ng-template carouselSlide>
+                    <div class="client-logo relative w-full h-full object-cover">
+                        <img ngSrc="assets/images/logo3.png" fill alt="">
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
+
+        </div>
+
+
+        <p class="text-lg mb-8 text-center">انضم إلى قائمة عملائنا المميزين واستمتع بموقع ويب يعكس قيم عملك ويحقق أهدافك
+            الرقمية. اتصل بنا الآن لبدء العمل على تحقيق رؤيتك الإبداعية.</p>
+        <button class="light-btn block w-fit m-auto relative z-10">إشترك الآن</button>
+    </div>
+
+</section>
+<!-- end top clients -->

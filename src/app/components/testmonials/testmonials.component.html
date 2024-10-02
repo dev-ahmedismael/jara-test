@@ -1,0 +1,170 @@
+<section class="testmonials py-12">
+
+    <div class="overflow-hidden-wrapper" data-aos="zoom-in">
+        <div class="top-right">
+            <img ngSrc="assets/images/shapelight.svg" alt="jara shape" fill>
+        </div>
+        <div class="bottom-left">
+            <img ngSrc="assets/images/shapesolid.svg" class="" alt="jara shape" fill>
+        </div>
+    </div>
+
+    <div class="sec-header">
+        <h2>آراء العملاء</h2>
+    </div>
+    
+
+
+    <div class="container">
+        <div class="btns-slider flex items-center justify-end relative z-10" data-aos="fade-left">
+            <button (click)="prevCard()"><i class="fa-solid fa-arrow-right"></i></button>
+            <button (click)="nextCard()"><i class="fa-solid fa-arrow-left"></i></button>
+        </div>
+        <div class="my-8 relative z-10" data-aos="zoom-in">
+            
+            <owl-carousel-o [options]="testmonials" #owlTestmonials>
+                <!-- item -->
+                <ng-template carouselSlide>
+                    <div class="test rounded-md p-8 relative w-full h-full">
+                        <div class="flex items-end">
+                            <div class="image-contain bg-gray-100 shadow-lg rounded-full overflow-hidden me-4">
+                                <img ngSrc="assets/images/person.png" alt="" fill>
+                            </div>
+                            <div>
+                                <h2 class="text-xl font-bold main-color">مهندس محمد محمود</h2>
+                                <p class="text-sm text-gray-400">رئيس مجلس ادارة شركة بنيان العقارية</p>
+                            </div>
+                        </div>
+                        <div class="rate flex flex-row-reverse items-center gap-x-1 mt-3">
+                            <i class="fa-solid fa-star fa-md rate-color"></i>
+                            <i class="fa-solid fa-star fa-md rate-color"></i>
+                            <i class="fa-solid fa-star fa-md rate-color"></i>
+                            <i class="fa-solid fa-star fa-md rate-color"></i>
+                            <i class="fa-solid fa-star fa-md"></i>
+                        </div>
+                        <p class="text-md text-justify mt-3">
+                            سعدت بالخدمة المقدمة لديكم والدعم الفني الرائع وسرعة الإستجابة فى اى وقت نريده
+                        </p>
+                        <div class="shape-back">
+                            <img ngSrc="assets/images/shapesolid.svg" fill alt="">
+                        </div>
+                    </div>
+                </ng-template>
+                <!-- item -->
+                <ng-template carouselSlide>
+                    <div class="test rounded-md p-8 relative w-full h-full">
+                        <div class="flex items-end">
+                            <div class="image-contain bg-gray-100 shadow-lg rounded-full overflow-hidden me-4">
+                                <img ngSrc="assets/images/person.png" alt="" fill>
+                            </div>
+                            <div>
+                                <h2 class="text-xl font-bold main-color">مهندس محمد محمود</h2>
+                                <p class="text-sm text-gray-400">رئيس مجلس ادارة شركة بنيان العقارية</p>
+                            </div>
+                        </div>
+                        <div class="rate flex flex-row-reverse items-center gap-x-1 mt-3">
+                            <i class="fa-solid fa-star fa-md rate-color"></i>
+                            <i class="fa-solid fa-star fa-md rate-color"></i>
+                            <i class="fa-solid fa-star fa-md rate-color"></i>
+                            <i class="fa-solid fa-star fa-md rate-color"></i>
+                            <i class="fa-solid fa-star fa-md rate-color"></i>
+                        </div>
+                        <p class="text-md text-justify mt-3">
+                            فريق عمل رائع
+                        </p>
+                        <div class="shape-back">
+                            <img ngSrc="assets/images/shapesolid.svg" fill alt="">
+                        </div>
+                    </div>
+                </ng-template>
+                <!-- item -->
+                <ng-template carouselSlide>
+                    <div class="test rounded-md p-8 relative w-full h-full">
+                        <div class="flex items-end">
+                            <div class="image-contain bg-gray-100 shadow-lg rounded-full overflow-hidden me-4">
+                                <img ngSrc="assets/images/person.png" alt="" fill>
+                            </div>
+                            <div>
+                                <h2 class="text-xl font-bold main-color">مهندس محمد محمود</h2>
+                                <p class="text-sm text-gray-400">رئيس مجلس ادارة شركة بنيان العقارية</p>
+                            </div>
+                        </div>
+                        <div class="rate flex flex-row-reverse items-center gap-x-1 mt-3">
+                            <i class="fa-solid fa-star fa-md rate-color"></i>
+                            <i class="fa-solid fa-star fa-md rate-color"></i>
+                            <i class="fa-solid fa-star fa-md rate-color"></i>
+                            <i class="fa-solid fa-star fa-md rate-color"></i>
+                            <i class="fa-solid fa-star fa-md rate-color"></i>
+                        </div>
+                        <p class="text-md text-justify mt-3">
+                            سعدت بالخدمة المقدمة لديكم 
+                        </p>
+                        <div class="shape-back">
+                            <img ngSrc="assets/images/shapesolid.svg" fill alt="">
+                        </div>
+                    </div>
+                </ng-template>
+                <!-- item -->
+                <ng-template carouselSlide>
+                    <div class="test rounded-md p-8 relative w-full h-full">
+                        <div class="flex items-end">
+                            <div class="image-contain bg-gray-100 shadow-lg rounded-full overflow-hidden me-4">
+                                <img ngSrc="assets/images/person.png" alt="" fill>
+                            </div>
+                            <div>
+                                <h2 class="text-xl font-bold main-color">مهندس محمد محمود</h2>
+                                <p class="text-sm text-gray-400">رئيس مجلس ادارة شركة بنيان العقارية</p>
+                            </div>
+                        </div>
+                        <div class="rate flex flex-row-reverse items-center gap-x-1 mt-3">
+                            <i class="fa-solid fa-star fa-md rate-color"></i>
+                            <i class="fa-solid fa-star fa-md rate-color"></i>
+                            <i class="fa-solid fa-star fa-md rate-color"></i>
+                            <i class="fa-solid fa-star fa-md rate-color"></i>
+                            <i class="fa-solid fa-star fa-md"></i>
+                        </div>
+                        <p class="text-md text-justify mt-3">
+                            سعدت بالخدمة المقدمة لديكم والدعم الفني الرائع وسرعة الإستجابة فى اى وقت نريده
+                        </p>
+                        <div class="shape-back">
+                            <img ngSrc="assets/images/shapesolid.svg" fill alt="">
+                        </div>
+                    </div>
+                </ng-template>
+                <!-- item -->
+                <ng-template carouselSlide>
+                    <div class="test rounded-md p-8 relative w-full h-full">
+                        <div class="flex items-end">
+                            <div class="image-contain bg-gray-100 shadow-lg rounded-full overflow-hidden me-4">
+                                <img ngSrc="assets/images/person.png" alt="" fill>
+                            </div>
+                            <div>
+                                <h2 class="text-xl font-bold main-color">مهندس محمد محمود</h2>
+                                <p class="text-sm text-gray-400">رئيس مجلس ادارة شركة بنيان العقارية</p>
+                            </div>
+                        </div>
+                        <div class="rate flex flex-row-reverse items-center gap-x-1 mt-3">
+                            <i class="fa-solid fa-star fa-md rate-color"></i>
+                            <i class="fa-solid fa-star fa-md rate-color"></i>
+                            <i class="fa-solid fa-star fa-md rate-color"></i>
+                            <i class="fa-solid fa-star fa-md rate-color"></i>
+                            <i class="fa-solid fa-star fa-md rate-color"></i>
+                        </div>
+                        <p class="text-md text-justify mt-3">
+                            سعدت بالخدمة المقدمة لديكم والدعم الفني الرائع وسرعة الإستجابة فى اى وقت نريده
+                        </p>
+                        <div class="shape-back">
+                            <img ngSrc="assets/images/shapesolid.svg" fill alt="">
+                        </div>
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
+
+        </div>
+
+        <button class="light-btn block w-fit m-auto relative z-10" data-aos="fade-up">إشترك الآن</button>
+    </div>
+    
+
+
+</section>

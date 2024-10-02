@@ -1,0 +1,117 @@
+
+
+/* start about section */
+.about {
+    position: relative;
+    margin-top: 35vh;
+}
+
+@media (max-width:800px) {
+    .about {
+        margin-top: 18vh;
+    }
+}
+
+@media (max-width:600px) {
+    .about {
+        margin-top: 10vh;
+    }
+}
+
+@media (max-width:400px) {
+    .about {
+        margin-top: 4vh;
+    }
+}
+
+
+.about .overflow-hidden-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.about .top-left {
+    position: absolute;
+    top: 0;
+    left: -10%;
+    width: 23vw;
+    aspect-ratio: 1 / 1;
+    opacity: 0.5;
+    animation: rotate-clockwise 70s linear infinite;
+    -webkit-animation: rotate-clockwise 70s linear infinite;
+}
+
+.about .bottom-right {
+    position: absolute;
+    bottom: 0;
+    right: -10%;
+    width: 20vw;
+    aspect-ratio: 1 / 1;
+    opacity: 0.1;
+    animation: rotate-counterclockwise 110s linear infinite;
+    -webkit-animation: rotate-counterclockwise 110s linear infinite;
+}
+
+
+.about p {
+    line-height: 2.5rem;
+}
+
+@media (max-width:600px) {
+    .about .top-left {
+        width: 45vw !important;
+        left: -15% !important;
+        opacity: 0.5;
+    }
+
+    .about .bottom-right {
+        width: 50vw !important;
+    }
+}
+.about .card{
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.about .card .icon{
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid var(--dark-color);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+
+}
+.about .card:hover{
+    box-shadow: 0 0 2px 5px rgba(133, 109, 86, 0.4);
+    background-color: white;
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+.divided img{
+    min-width: 400px;
+    max-width: 600px;
+}
+/* end about section */

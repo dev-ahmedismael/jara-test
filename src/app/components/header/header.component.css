@@ -1,0 +1,69 @@
+/* start head section and nav */
+
+.head {
+    height: 100vh;
+    background-image: url(./../../../../public/assets/images/home.png);
+    background-size: cover;
+    background-position: center bottom;
+    position: relative;
+    top: 0;
+}
+
+
+.head .overflow-hidden-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.head .top-left {
+    position: absolute;
+    top: 30%;
+    left: -10%;
+    width: 30vw;
+    aspect-ratio: 1 / 1;
+    animation: rotate-clockwise 70s linear infinite;
+    -webkit-animation: rotate-clockwise 70s linear infinite;
+}
+
+.head .bottom-right {
+    position: absolute;
+    bottom: 10%;
+    right: -5%;
+    width: 20vw;
+    aspect-ratio: 1 / 1;
+    animation: rotate-counterclockwise 40s linear infinite;
+    -webkit-animation: rotate-counterclockwise 40s linear infinite;
+}
+
+.head .container {
+    position: relative;
+    z-index: 2;
+}
+
+.head .trans-img {
+    animation: move-up-down 3s ease-in-out infinite;
+    -webkit-animation: move-up-down 3s ease-in-out infinite;
+
+}
+
+
+@media (max-width:600px) {
+    .head .top-left {
+        width: 45vw !important;
+        left: -20% !important;
+    }
+
+    .head .bottom-right {
+        width: 40vw !important;
+        right: -15%;
+    }
+}
+
+
+/* end head section and nav */
+

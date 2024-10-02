@@ -1,0 +1,210 @@
+
+/* start infograph section */
+.info-graph {
+    background-image: url(./../../../../public/assets/images/infograph.png);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+.info-graph .overflow-hidden-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.info-graph .top-left {
+    position: absolute;
+    bottom: 10%;
+    left: -10%;
+    width: 30vw;
+    opacity: 0.6;
+    aspect-ratio: 1 / 1;
+    animation: rotate-clockwise 70s linear infinite;
+    -webkit-animation: rotate-clockwise 70s linear infinite;
+}
+.info-graph .center-center {
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    width: 20vw;
+    opacity: 0.6;
+    transform: translate(-50%,-50%);
+    aspect-ratio: 1 / 1;
+    animation: rotate-clockwise 150s linear infinite;
+    -webkit-animation: rotate-clockwise 150s linear infinite;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+
+.info-graph .bottom-right {
+    position: absolute;
+    top: 10%;
+    right: -15%;
+    width: 25vw;
+    aspect-ratio: 1 / 1;
+    animation: rotate-counterclockwise 100s linear infinite;
+    -webkit-animation: rotate-counterclockwise 100s linear infinite;
+}
+
+.info-graph .info {
+    position: relative !important;
+    z-index: 10;
+}
+
+.info-graph .step {
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.info-graph .step p {
+    line-height: 2rem;
+}
+
+.info-graph .info .number {
+    width: 90px;
+    height: 90px;
+    background: linear-gradient(to top, var(--main-color), var(--dark-color));
+    color: white;
+    font-size: 3.5rem;
+    font-weight: bold;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.info-graph .info .number1 {
+    border-top-right-radius: 90px;
+    bottom: 0;
+    left: 0;
+
+}
+
+.info-graph .info .number2 {
+    border-bottom-right-radius: 90px;
+    top: 0;
+    left: 0;
+}
+
+.info-graph .info .number3 {
+    border-bottom-left-radius: 90px;
+    right: 0;
+    top: 0;
+}
+
+.info-graph .info .number4 {
+    border-top-left-radius: 90px;
+    bottom: 0;
+    right: 0;
+}
+
+.info-graph .info .step1 {
+    border-top-right-radius: 4rem;
+}
+
+.info-graph .info .step2 {
+    border-bottom-right-radius: 4rem;
+}
+
+.info-graph .info .step3 {
+    border-bottom-left-radius: 4rem;
+}
+
+.info-graph .info .step4 {
+    border-top-left-radius: 4rem;
+}
+
+
+
+
+@media (max-width: 767px) {
+    .info-graph .top-left{
+        width: 50vw;
+    }
+    .info-graph .bottom-right{
+        width: 55vw;
+    }
+    .info-graph .center-center{
+        display: none;
+    }
+    .info-graph .info {
+        display: grid !important;
+        grid-template-columns: 1fr;
+        gap: 2rem !important;
+    }
+
+    .step1 {
+        order: 1;
+    }
+
+    .step2 {
+        order: 2;
+    }
+
+    .step3 {
+        order: 3;
+    }
+
+    .step4 {
+        order: 4;
+    }
+
+    .info-graph .info .number1,
+    .info-graph .info .number3 {
+        border-radius: unset;
+        right: unset;
+        bottom: unset;
+        top: 0;
+        left: 0;
+        -webkit-border-radius: unset;
+        -moz-border-radius: unset;
+        -ms-border-radius: unset;
+        -o-border-radius: unset;
+        border-bottom-right-radius: 90px;
+    }
+
+    .info-graph .info .step1,
+    .info-graph .info .step3 {
+        border-radius: unset;
+        -webkit-border-radius: unset;
+        -moz-border-radius: unset;
+        -ms-border-radius: unset;
+        -o-border-radius: unset;
+        border-bottom-left-radius: 3rem;
+        border-top-right-radius: 3rem;
+    }
+
+    .info-graph .info .number2,
+    .info-graph .info .number4 {
+        border-radius: unset;
+        right: 0;
+        bottom: unset;
+        top: 0;
+        left: unset;
+        -webkit-border-radius: unset;
+        -moz-border-radius: unset;
+        -ms-border-radius: unset;
+        -o-border-radius: unset;
+        border-bottom-left-radius: 90px;
+    }
+
+    .info-graph .info .step2,
+    .info-graph .info .step4 {
+        border-radius: unset;
+        -webkit-border-radius: unset;
+        -moz-border-radius: unset;
+        -ms-border-radius: unset;
+        -o-border-radius: unset;
+        border-bottom-right-radius: 3rem;
+        border-top-left-radius: 3rem;
+    }
+}
+
+/* end infograph section */
